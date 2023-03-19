@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Booking Form</title>
+    <link rel="stylesheet" href="styles/labstyle.css">
+</head>
+
+<body>
+    <h1>Lab Booking Form</h1>
+    <aside id="sidebar">
+        <div>
+            <img src="Lab-Test/lab-test.jpg" alt="lab test">
+        </div>
+    </aside>
+
+    <div id="form">
+        <form>
+            <table>
+                <tr>
+                    <h2>1. Your Contact Details</h2>
+                    <td>
+                        <input type="text" placeholder="Full Name" name="fullName" required>
+                    </td>
+                    <td>
+                        <input type="number" placeholder="Patient Id If Exists" name="patientid">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="number" placeholder="Contact Number" name="contact" min="6000000000"
+                            max="9999999999" required>
+                    </td>
+                    <td>
+                        <input type="email" placeholder="Email" name="email" required>
+                    </td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <h2>2. Address</h2>
+                    <td>
+                        <input type="text" placeholder="House No." name="houseNo" required>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Street No." name="streetNo" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="Area" name="area" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="districtlabel" for="district">District</label>
+                        <select name="District" id="district" required>
+                            <option value="">Choose</option>
+                            <option value="Bangalore Urban">Bangalore Urban</option>
+                            <option value="Bangalore Rural">Bangalore Rural</option>
+                            <option value="Ramnagar">Ramnagar</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <h2>3. Choose the Test Type
+                        <br />(Check Atleast One Box)
+                    </h2>
+                    <td id="testcheckbox">
+                        <input type="checkbox" id="c1" name="option1" value="cbc">
+                        <label class="select" for="c1">CBC</label>
+                        <br />
+                        <input type="checkbox" id="c2" name="option2" value="completeUrine">
+                        <label class="select" for="c2">Complete Urine</label>
+                        <br />
+                        <input type="checkbox" id="c3" name="option3" value="lipidProfile">
+                        <label class="select" for="c3">Lipid Profile</label>
+                        <br />
+                        <input type="checkbox" id="c4" name="option4" value="tsh">
+                        <label class="select" for="c4">Thyroid Stimulating Hormone(TSH)</label>
+                        <br />
+                        <input type="checkbox" id="c5" name="option5" value="glucoseTest">
+                        <label class="select" for="c5">Glucose Test</label>
+                        <br />
+                    </td>
+                </tr>
+            </table>
+
+            <article>
+                <h2>Do you want a hard copy of the report also?</h2>
+                <input type="radio" id="c6" name="option" value="yes" required>
+                <label class="select" for="c6">Yes</label>
+                <br>
+                <input type="radio" id="c7" name="option" value="no">
+                <label class="select" for="c7">No</label>
+            </article>
+            <br />
+
+            <div>
+                <h2>Select Your Comfortable Date and Time</h2>
+                <input type="date" id="date" name="deliveryDateTime"> <br />
+                <input type="time" id="time" name="deliveryTime">
+            </div>
+            <br /> <br /> <br />
+            <button type="reset" value="Reset">Reset</button>
+            <button type="submit" value="Submit">Submit</button>
+        </form>
+    </div>
+    <br />
+    <br />
+
+    <a href="home.html">Home Page</a>
+    <br /> <br /> <br />
+    <footer>@Copyright. Only for demonstration purposes.</footer>
+</body>
+
+</html>
